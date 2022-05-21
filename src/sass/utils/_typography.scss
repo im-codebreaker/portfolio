@@ -1,0 +1,36 @@
+@font-face {
+    font-family: title;
+    src:local('Righteous'), local('Righteous-Regular'),
+    url('../fonts/Righteous-Regular.woff2') format('woff2'),
+    url('../fonts/Righteous-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style:normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: codeBreaker;
+    src: local('Sarpanch Regular'), local('Sarpanch-Regular'),
+        url('../fonts/Sarpanch-Regular.woff2') format('woff2'),
+        url('../fonts/Sarpanch-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: contentRegular;
+    src: local('Fira Code Regular'), local('FiraCode-Regular'),
+        url('../fonts/FiraCode-Regular.woff2') format('woff2'),
+        url('../fonts/FiraCode-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: contentSemiBold;
+    src: local('Fira CodeSemiBold'), local('FiraCode-SemiBold'),
+        url('../fonts/FiraCode-SemiBold.woff2') format('woff2'),
+        url('../fonts/FiraCode-SemiBold.eot?#iefix') format('embedded-opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

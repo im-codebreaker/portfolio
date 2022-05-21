@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+/*------------------------------------*\
+  #USE FILES
+\*------------------------------------*/
+
+@use './utils/reset';
+@use './utils/typography';
+@use './utils/variables';
+
+
+html{
+  color:variables.$dark;
+  background-color: variables.$light;
+}
+html[data-theme='dark']{
+  color:variables.$light;
+  background-color: variables.$dark;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: title, sans-serif;
+}
+p{
+  font-family: contentRegular, sans-serif;
+}
