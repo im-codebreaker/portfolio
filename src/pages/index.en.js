@@ -17,10 +17,10 @@ const IndexPage = () => {
               <h1>
                 Hello Wolrd,
                 <br />
-                Développeur Frontend React, Webdesigner
+                React Frontend Developer, Webdesigner
               </h1>
               <p>Lorem ipsum dolor sit amet</p>
-              <button>Rencontrez-moi</button>
+              <button>Meet-me</button>
             </div>
             <picture className="section_hero-image">
               <img src="https://via.placeholder.com/640" alt="" />
@@ -45,16 +45,16 @@ const IndexPage = () => {
         </section>
         <section className="section_about">
           <article className="section_about-description">
-            <h2>A propos de moi</h2>
+            <h2>About me</h2>
             <p>
-              Je m'appel Mehdi, Développeur Frontend React et Webdesigner basé
-              dans le sud de la France. Passionné par le web et les arts
-              graphiques, vous pourrez me voir graviter sur la toile également
-              sous la dénomination Code Breaker.
+              My name is Mehdi, React Frontend Developer and Webdesigner based
+              in the south of France. Passionate about the web and graphic arts,
+              you can see me gravitating on the web under the name of Code
+              Breaker.
               <br />
-              Propulsé dans le domaine du web par la porte du Webdesign, mon
-              envie de me perfectionner et de monter en compétences m'ont
-              conduis sur le chemin du développement Front.
+              Propel into the web domain through the Webdesign door, my desire
+              to improve myself and increase my skills led me to the path of the
+              Frontend develpmont{" "}
             </p>
           </article>
           <picture className="section_about-image">
@@ -62,10 +62,10 @@ const IndexPage = () => {
           </picture>
         </section>
         <section className="section_project">
-          <h2>Derniers Projets</h2>
+          <h2>Last Projects</h2>
           <p>
-            Découvrez un aperçu des derniers projets sur lesquels j'ai pu avoir
-            l'opportunité et le plaisir de contribuer
+            Here is an overview of the latest projects on which i had the
+            opportunity and pleasure to contribute.
           </p>
           <div className="section_project-list">
             <div className="project_list-item">
@@ -99,11 +99,13 @@ const IndexPage = () => {
           </div>
         </section>
         <section className="section_contact">
-          <h2>Rencontrez-moi</h2>
+          <section className="section_contact">
+            <h2>Meet-me</h2>
+          </section>
         </section>
       </main>
       <footer className="footer">
-        <p>Copyright 2022 - Réalisé avec ❤ et 🎵</p>
+        <p>Copyright 2022 - Made with ❤ and 🎵</p>
         <a href="#top">Back to top</a>
       </footer>
     </>

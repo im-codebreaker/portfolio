@@ -9,6 +9,10 @@
 @use './utils/variables';
 
 
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
+
 html{
   color:variables.$dark;
   background-color: variables.$light;
@@ -27,4 +31,14 @@ h6{
 }
 p{
   font-family: contentRegular, sans-serif;
+}
+
+/*------------------------------------*\
+  #UTILS
+\*------------------------------------*/
+
+.container{
+  width: 80%;
+  max-width: 1320px;
+  margin-inline: auto;
 }
