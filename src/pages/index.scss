@@ -1,0 +1,57 @@
+@use '../sass/utils/variables';
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+}
+.logo.dark{
+    fill:variables.$light;
+}
+.logo.light{
+    fill:variables.$dark;
+}
+.section_hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 88px);
+}
+.section_hero-wrapper{
+    display:flex;
+    flex-direction: column-reverse;
+
+}
+.section_hero-links{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.hero_links-social{
+    display:flex;
+    flex-direction: row;
+}
+.hero_links-social li:not(:last-child){
+    margin-right: 24px;
+}
+.hero_baseline-title:not(.greeting){
+    font-size: 1rem;
+}
+.greeting{
+        display:block;
+        font-size:2rem;
+        background-image: linear-gradient(90deg, variables.$primary-lighter -6.11%, variables.$primary-darker 106.55%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+.baseline_title-button{
+    cursor: pointer;
+    border: none;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: variables.$primary;
+}

@@ -4,11 +4,35 @@ import "../sass/main.scss";
 import "./index.scss";
 
 const IndexPage = () => {
+  const [theme, setTheme] = React.useState("light");
+
+  function handleThemeSwitch() {
+    if (document.documentElement.dataset.theme === "light") {
+      document.documentElement.dataset.theme = "dark";
+      setTheme("dark");
+    } else {
+      document.documentElement.dataset.theme = "light";
+      setTheme("light");
+    }
+  }
+
   return (
     <>
       <header class="header">
-        <img class="logo" href="" alt="" width="" height="" />
-        <button class="switcher_theme">Light</button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+        >
+          <path
+            className={`logo ${theme}`}
+            d="M0 40V0H30V15H40V40H10V22H16V35H34V20H20V15H24V5H16V15H10V5H6V40H0Z"
+          />
+        </svg>
+        <button className="switcher_theme" onClick={handleThemeSwitch}>
+          {theme}
+        </button>
       </header>
       <main class="container">
         <section className="section_hero">
@@ -29,13 +53,19 @@ const IndexPage = () => {
           <nav className="section_hero-links">
             <ul className="hero_links-social">
               <li>
-                <Link to="/">Linkedin</Link>
+                <Link to="/">
+                  <i class="ri-linkedin-fill"></i>
+                </Link>
               </li>
               <li>
-                <Link to="/">Twitter</Link>
+                <Link to="/">
+                  <i class="ri-twitter-fill"></i>
+                </Link>
               </li>
               <li>
-                <Link to="/">Github</Link>
+                <Link to="/">
+                  <i class="ri-github-fill"></i>
+                </Link>
               </li>
             </ul>
             <div className="hero_links-languages">

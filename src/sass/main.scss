@@ -8,18 +8,25 @@
 @use './utils/typography';
 @use './utils/variables';
 
+$titleColor: var(--title-color);
+$textColor: var(--text-color);
+$backgroundColor: var(--background-color);
 
 /*------------------------------------*\
   #GLOBAL
 \*------------------------------------*/
-
-html{
-  color:variables.$dark;
-  background-color: variables.$light;
-}
+:root{
+  --title-color:#00B88D;
+  --text-color: #121212;
+  --background-color:#fff;
+ }
 html[data-theme='dark']{
-  color:variables.$light;
-  background-color: variables.$dark;
+ --title-color: #64FFDA;
+ --text-color:#fff;
+ --background-color:#121212;
+}
+body{
+  background-color: $backgroundColor;
 }
 h1,
 h2,
@@ -27,9 +34,19 @@ h3,
 h4,
 h5,
 h6{
+  color: $titleColor;
   font-family: title, sans-serif;
 }
+a{
+  color:inherit;
+  text-decoration: none;
+}
+ul,
+ol{
+  list-style-type: none;
+}
 p{
+  color:$textColor;
   font-family: contentRegular, sans-serif;
 }
 
