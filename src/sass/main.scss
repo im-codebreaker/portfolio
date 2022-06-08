@@ -8,25 +8,26 @@
 @use './utils/typography';
 @use './utils/variables';
 
-$titleColor: var(--title-color);
-$textColor: var(--text-color);
-$backgroundColor: var(--background-color);
-
 /*------------------------------------*\
   #GLOBAL
 \*------------------------------------*/
+
 :root{
-  --title-color:#00B88D;
-  --text-color: #121212;
-  --background-color:#fff;
+  --title-color: #{variables.$primary-darker};
+  --text-color:#{variables.$dark};
+  --background-color:#{variables.$light};
  }
+html{
+  scroll-behavior: smooth;
+}
 html[data-theme='dark']{
- --title-color: #64FFDA;
- --text-color:#fff;
- --background-color:#121212;
+ --title-color: #{variables.$primary};
+ --text-color:#{variables.$light};
+ --background-color:#{variables.$dark};
 }
 body{
-  background-color: $backgroundColor;
+  position:relative;
+  background-color: var(--background-color);
 }
 h1,
 h2,
@@ -34,11 +35,11 @@ h3,
 h4,
 h5,
 h6{
-  color: $titleColor;
+  color: var(--title-color);
   font-family: title, sans-serif;
 }
 a{
-  color:inherit;
+  color:var(--text-color);
   text-decoration: none;
 }
 ul,
@@ -46,7 +47,7 @@ ol{
   list-style-type: none;
 }
 p{
-  color:$textColor;
+  color:var(--text-color);
   font-family: contentRegular, sans-serif;
 }
 
@@ -58,4 +59,7 @@ p{
   width: 80%;
   max-width: 1320px;
   margin-inline: auto;
+}
+.light{
+  color:variables.$light;
 }

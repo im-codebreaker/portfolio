@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Header, Footer } from "../layout";
 import "../sass/main.scss";
 import "./404.scss";
 
@@ -6,11 +7,11 @@ import "./404.scss";
 const NotFoundPage = () => {
   return (
     <>
-      <header></header>
+      <Header />
       <main class="container">
         <section className="section_notfound"></section>
       </main>
-      <footer className="footer"></footer>
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,25 @@
+@use '../sass/utils/variables';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+}
+.logo.dark {
+  fill: variables.$light;
+}
+.logo.light {
+  fill: variables.$dark;
+}
+.theme_switcher{
+  cursor:pointer;
+  border: none;
+  padding: .5rem;
+  border-radius: 50%;
+  background-color: var(--background-color);
+}
