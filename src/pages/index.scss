@@ -21,6 +21,10 @@
     flex: 1;
   }
 }
+.section_hero-image{
+  transform: translateY(-200px);
+  opacity: 0;
+}
 .section_hero-links {
   display: flex;
   flex-direction: row;
@@ -36,6 +40,11 @@
 }
 .hero_links-social li:not(:last-child) {
   margin-right: 24px;
+}
+.hero_baseline-title{
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(100px);
 }
 .hero_baseline-title:not(.greeting) {
   color: var(--text-color);
@@ -112,6 +121,7 @@
   margin-top: 2rem;
   border: none;
   border-radius: 80px;
+  opacity: 0;
   text-align: center;
   font-family: contentSemiBold;
   color: var(--background-color);
