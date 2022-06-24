@@ -1,0 +1,16 @@
+@use '../sass/utils/variables';
+
+.section_notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+
+  @media screen and (min-width: 64em) {
+    flex-direction: row;
+  }
+}
+.section_notfound-description p {
+  margin: 2rem 0;
+}

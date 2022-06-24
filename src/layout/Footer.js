@@ -4,7 +4,9 @@ import './Footer.scss';
 function Footer() {
   return (
     <footer className='footer'>
-      <p>Développé avec ❤ et 🎵</p>
+      <p>
+        Développé avec <span>💖</span> et 🎵
+      </p>
     </footer>
   );
 }

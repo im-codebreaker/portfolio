@@ -12,21 +12,26 @@
   #GLOBAL
 \*------------------------------------*/
 
-:root{
+#___gatsby {
+  overflow-x: hidden;
+}
+:root {
   --title-color: #{variables.$primary-darker};
-  --text-color:#{variables.$dark};
-  --background-color:#{variables.$light};
- }
-html{
+  --text-color: #{variables.$dark};
+  --background-color: #{variables.$light};
+  --placeholder-color: #{variables.$dark1};
+}
+html {
   scroll-behavior: smooth;
 }
-html[data-theme='dark']{
- --title-color: #{variables.$primary};
- --text-color:#{variables.$light};
- --background-color:#{variables.$dark};
+html[data-theme='dark'] {
+  --title-color: #{variables.$primary};
+  --text-color: #{variables.$light};
+  --background-color: #{variables.$dark};
+  --placeholder-color: #{variables.$light1};
 }
-body{
-  position:relative;
+body {
+  position: relative;
   background-color: var(--background-color);
 }
 h1,
@@ -34,32 +39,59 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   color: var(--title-color);
   font-family: title, sans-serif;
 }
-a{
-  color:var(--text-color);
+a {
+  color: var(--text-color);
   text-decoration: none;
 }
 ul,
-ol{
+ol {
   list-style-type: none;
 }
-p{
-  color:var(--text-color);
+p {
+  color: var(--text-color);
   font-family: contentRegular, sans-serif;
+}
+textarea {
+  resize: none;
 }
 
 /*------------------------------------*\
   #UTILS
 \*------------------------------------*/
 
-.container{
+.container {
   width: 80%;
   max-width: 1320px;
   margin-inline: auto;
 }
-.light{
-  color:variables.$light;
+.button {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 80px;
+  text-align: center;
+  font-family: contentSemiBold;
+  color: var(--background-color);
+  background-color: variables.$primary;
+  transition: width 400ms ease-in-out;
+
+  @media (hover: hover) {
+    &:hover {
+      outline: 4px solid variables.$primary-focus;
+      transition: width 400ms ease-in-out;
+    }
+  }
+  @media screen and (min-width: 48em) {
+    width: 320px;
+  }
+}
+.light {
+  color: variables.$light;
 }

@@ -1,7 +1,14 @@
-$primary: #00EBB4;
-$primary-darker: #00B88D;
-$primary-lighter:#64FFDA;
-$primary-focus:rgba(100, 255, 219, 0.40);
+$primary: hsl(166, 100%, 46%);
+$primary-darker: hsl(166, 100%, 36%);
+$primary-lighter: hsl(166, 100%, 70%);
+$primary-focus: rgba(100, 255, 219, 0.4);
 
-$dark: #121212;
-$light: #fff;
+$dark: hsl(0, 0%, 7%);
+$dark1: hsl(0, 0%, 61%);
+$light: hsl(0, 0%, 100%);
+$light1: hsl(0, 1%, 72%);
+
+$elevationLight: 0px 2px 8px rgba(40, 41, 61, 0.04),
+  0px 16px 24px rgba(96, 97, 112, 0.16);
+$elevationDark: 0px 2px 8px rgba(40, 41, 61, 0.04),
+  0px 16px 24px rgba(96, 97, 112, 0.16);
