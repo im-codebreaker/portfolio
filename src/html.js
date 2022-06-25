@@ -22,6 +22,19 @@ export default function HTML(props) {
         <link rel='canonical' href='' />
         {props.headComponents}
         <link
+          rel='preconnect'
+          href='https://imcodebreaker.s3.eu-west-3.amazonaws.com'
+        ></link>
+        <link
+          rel='preconnect'
+          href='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com'
+        ></link>
+        <link
+          rel='preload'
+          as='style'
+          href='https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css'
+        ></link>
+        <link
           href='https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css'
           rel='stylesheet'
         ></link>

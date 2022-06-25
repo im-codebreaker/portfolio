@@ -21,30 +21,6 @@
 .section_contact h2 {
   margin-bottom: 2rem;
 }
-.button {
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  margin-top: 2rem;
-  border: none;
-  border-radius: 80px;
-  text-align: center;
-  font-family: contentSemiBold;
-  color: var(--background-color);
-  background-color: variables.$primary;
-  transition: width 400ms ease-in-out;
-
-  @media (hover: hover) {
-    &:hover {
-      outline: 4px solid variables.$primary-focus;
-      transition: width 400ms ease-in-out;
-    }
-  }
-  @media screen and (min-width: 48em) {
-    width: 320px;
-  }
-}
 
 /*------------------------------------*\
   #SECTION HERO

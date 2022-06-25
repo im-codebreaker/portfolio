@@ -18,7 +18,7 @@ const NotFoundPage = () => {
           <picture>
             <img
               src='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/porfolio_notfound.png'
-              alt=''
+              alt='Différents élements 3D en lien avec un status 404'
               width={640}
               height={640}
             />

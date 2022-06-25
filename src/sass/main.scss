@@ -18,6 +18,7 @@
 :root {
   --title-color: #{variables.$primary-darker};
   --text-color: #{variables.$dark};
+  --background-button: #{variables.$primary-darker};
   --background-color: #{variables.$light};
   --placeholder-color: #{variables.$dark1};
 }
@@ -27,6 +28,7 @@ html {
 html[data-theme='dark'] {
   --title-color: #{variables.$primary};
   --text-color: #{variables.$light};
+  --background-button: #{variables.$primary};
   --background-color: #{variables.$dark};
   --placeholder-color: #{variables.$light1};
 }
@@ -68,6 +70,9 @@ textarea {
   max-width: 1320px;
   margin-inline: auto;
 }
+.display-none {
+  display: none;
+}
 .button {
   cursor: pointer;
   display: block;
@@ -79,7 +84,7 @@ textarea {
   text-align: center;
   font-family: contentSemiBold;
   color: var(--background-color);
-  background-color: variables.$primary;
+  background-color: var(--background-button);
   transition: width 400ms ease-in-out;
 
   @media (hover: hover) {
