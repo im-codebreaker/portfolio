@@ -14,16 +14,11 @@ function French({ element }) {
       </div>
       <picture className='section_hero-image'>
         <source
-          srcSet='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/room.webp'
-          type='image/webp'
-          media='(min-width: 48em)'
-        />
-        <source
-          srcSet='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/room_small.webp'
+          srcSet='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/my_room.webp'
           type='image/webp'
         />
         <img
-          src='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/room_small.png'
+          src='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/my_room.png'
           width={1080}
           height={1080}
           alt='Rendu 3D de mon espace de travail'
@@ -47,16 +42,11 @@ function English({ element }) {
       </div>
       <picture className='section_hero-image'>
         <source
-          srcSet='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/room.webp'
-          type='image/webp'
-          media='(min-width: 48em)'
-        />
-        <source
-          srcSet='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/room_small.webp'
+          srcSet='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/my_room.webp'
           type='image/webp'
         />
         <img
-          src='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/room_small.png'
+          src='https://imcodebreaker-portfolio.s3.eu-west-3.amazonaws.com/my_room.png'
           width={660}
           height={660}
           alt='3D render of my workspace'

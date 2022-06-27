@@ -16,9 +16,8 @@ function French() {
         <p>
           Capable de travailler en toute autonomie, mon excellent sens du
           relationnel me permet de facilement m'intégrer au sein d'une équipe.
-          J' aimes utiliser mon temps libre pour monter en compétences,
-          développer de nouveaux projets et participer à des projets Open
-          Source.
+          J'aime utiliser mon temps libre pour monter en compétences, développer
+          de nouveaux projets et participer à des projets Open Source.
         </p>
       </article>
       <picture className='section_about-image'>
